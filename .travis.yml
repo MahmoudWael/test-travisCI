@@ -3,5 +3,5 @@ services:
   - docker
 
 script:
-  - docker build -t echo "$SECRET_KEY"/node .
-  - docker images echo "$SECRET_KEY"/node
+  - docker build -t $DOCKER_USERNAME/node .
+  - docker images $DOCKER_USERNAME/node
