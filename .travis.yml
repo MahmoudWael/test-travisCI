@@ -3,5 +3,5 @@ services:
   - docker
 
 script:
-  - docker build -t mahmoudwael/node .
-  - docker images mahmoudwael/node
+  - docker build -t $DOCKER_NAME/node .
+  - docker images $DOCKER_NAME/node
