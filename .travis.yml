@@ -8,6 +8,7 @@ script:
 
 before_deploy:
   - docker login -u $DOCKER_USERNAME -p $DOCKER_PASSWORD
+  - mocha
 
 deploy:
   provider: script
